@@ -1,2 +1,2 @@
-# Book_InventoryCS151
-a book inventory for the final project for CS 151
+# Todo_ListCS151
+a todo list project for the final project for CS 151
