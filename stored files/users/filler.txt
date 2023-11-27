@@ -1,0 +1,1 @@
+this folder will hold a file that contains all the users then also folders that correlate to users that hold all the lists for that user
