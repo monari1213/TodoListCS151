@@ -1,16 +1,15 @@
 import tkinter as tk
 
-list_page = tk.Tk()
-list_page.geometry("1440x1024")
-list_page.title("list page")
+complete_page = tk.Tk()
+complete_page.geometry("1440x1024")
+complete_page.title("complete page")
 
 
-user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).place(x=25, y=25)
+completed_title = tk.Label(list_page, text="Completed", font=("times new roman", 69, "bold"))
+# need to place
+completed_sub_title = tk.Label(list_page, text="{user}'s To-Do-List}", font=("times new roman", 69, "bold"))
+# need to place
 
-edit_button = tk.Button(user_page, text="E", relief="sunken" ,font=("times new roman", 30))
-# need to place this somewhere
-add_button = tk.Button(user_page, text="A", relief="sunken" ,font=("times new roman", 30))
-# place to right of edit button
 
 back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("times new roman", 30))
 # place all the way to the left
@@ -23,16 +22,7 @@ arrow.create_line(50,50,200,200, arrow=tk.LAST)
 # code creds for the arrow: https://www.codeease.net/programming/python/drawing-arrows-in-tkinter
 # NONE OF THESE NUMBER PLACEMENTS ARE RIGHT BECAUSE I CANT RUN MY CODE
 # THEY ARE PLACEHOLDERS
-list_page.mainloop()
 
-# code it so that it is a bool, either complete or not
-# below the goal is just to make a circle
-# intentionally not putting in details
-# also need to make sure they are **buttons***
-task_1_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_2_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_3_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
 
 # now for the task descriptions
 # make sure the y coordinate of these is the same as the corresponding textbox
