@@ -5,25 +5,28 @@ list_page.geometry("1440x1024")
 list_page.title("list page")
 
 
-user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).place(x=25, y=25)
+user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).grid(column=1, row=0, columnspan=3, sticky= "wens")
 
-edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30))
+edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30)).grid(column=8, row=0, sticky= "wens")
 # need to place this somewhere
-add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30))
+add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30)).grid(column=9, row=0, sticky= "wens")
 # place to right of edit button
 
-back_button = tk.Button(user_list, text="Back", relief="sunken" ,font=("times new roman", 30))
+#create back button
+list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30))
+list_back_button.grid(column=0, row=0, sticky= "wens")
+
 # place all the way to the left
 # also need an arrow
 
-arrow = tk.Canvas(user_list, width = 400, height = 400)
-arrow.pack()
-# draw an arrow from (50,50) to (200,200)
-arrow.create_line(50,50,200,200, arrow=tk.LAST)
+#commented out arrow code cause its pissng me off - Kristina
+# arrow = tk.Canvas(user_list, width = 400, height = 400)
+# arrow.pack()
+# # draw an arrow from (50,50) to (200,200)
+# arrow.create_line(50,50,200,200, arrow=tk.LAST)
 # code creds for the arrow: https://www.codeease.net/programming/python/drawing-arrows-in-tkinter
 # NONE OF THESE NUMBER PLACEMENTS ARE RIGHT BECAUSE I CANT RUN MY CODE
 # THEY ARE PLACEHOLDERS
-list_page.mainloop()
 
 # code it so that it is a bool, either complete or not
 # below the goal is just to make a circle
@@ -40,13 +43,13 @@ list_page.mainloop()
 # the x coordinates for all of these should be the same so they are vertically aligned
 # should we delineate task_1_title from task_1_description and place one under the other?
 # also think about aligning here, want to make sure its on the left of the label
-task_1_description = tk.Label(list_page, text="{text_1_description}", font=("times new roman", 20))
+task_1_description = tk.Label(list_page, text="{text_1_description}", font=("times new roman", 20)).grid(column=1, row=1, pady=10)
 # need to properly place
-task_2_description = tk.Label(list_page, text="{text_2_description}", font=("times new roman", 20))
+task_2_description = tk.Label(list_page, text="{text_2_description}", font=("times new roman", 20)).grid(column=1, row=2, pady=10)
 # need to properly place
-task_3_description = tk.Label(list_page, text="{text_3_description}", font=("times new roman", 20))
+task_3_description = tk.Label(list_page, text="{text_3_description}", font=("times new roman", 20)).grid(column=1, row=3, pady=10)
 # need to properly place
-task_4_description = tk.Label(list_page, text="{text_4_description}", font=("times new roman", 20))
+task_4_description = tk.Label(list_page, text="{text_4_description}", font=("times new roman", 20)).grid(column=1, row=4, pady=10)
 # need to properly place
 
 list_page.mainloop()
