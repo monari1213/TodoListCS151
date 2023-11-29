@@ -7,16 +7,16 @@ list_page.title("list page")
 
 user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).place(x=25, y=25)
 
-edit_button = tk.Button(user_page, text="E", relief="sunken" ,font=("times new roman", 30))
+edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30))
 # need to place this somewhere
-add_button = tk.Button(user_page, text="A", relief="sunken" ,font=("times new roman", 30))
+add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30))
 # place to right of edit button
 
-back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("times new roman", 30))
+back_button = tk.Button(user_list, text="Back", relief="sunken" ,font=("times new roman", 30))
 # place all the way to the left
 # also need an arrow
 
-arrow = tk.Canvas(root, width = 400, height = 400)
+arrow = tk.Canvas(user_list, width = 400, height = 400)
 arrow.pack()
 # draw an arrow from (50,50) to (200,200)
 arrow.create_line(50,50,200,200, arrow=tk.LAST)
@@ -29,10 +29,11 @@ list_page.mainloop()
 # below the goal is just to make a circle
 # intentionally not putting in details
 # also need to make sure they are **buttons***
-task_1_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_2_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_3_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+#commented out to remove errors while I push - Kristina
+# task_1_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+# task_2_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+# task_3_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+# task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
 
 # now for the task descriptions
 # make sure the y coordinate of these is the same as the corresponding textbox
