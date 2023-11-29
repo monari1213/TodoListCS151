@@ -13,6 +13,7 @@ pixel = tk.PhotoImage(width=1, height=1)
 user_page.geometry("1440x1024")
 user_page.title("user page")
 
+#formats the grid
 user_page.grid_columnconfigure(0, pad=25)
 user_page.grid_columnconfigure(9, pad=25)
 user_page.grid_rowconfigure(0, pad=10)
@@ -39,6 +40,7 @@ user_back_button.grid(column=0, row=0, sticky= "wens")
 #creates the first list 
 list1_button = tk.Button(user_page, text="List 1 Name", relief="sunken", font=("times new roman", 30))
 list1_button.grid(column=1, columnspan=2,row=2, padx= 10, pady = 10)
+
 #creates the tasks 
 list1_label1 = tk.Label(user_page, text=("task 1"), relief="ridge", font=("times new roman", 25)).grid(column=1, row=3, padx=10)
 list1_label2 = tk.Label(user_page, text=("task 2"), relief="ridge", font=("times new roman", 25)).grid(column=2, row=3, padx=10)
