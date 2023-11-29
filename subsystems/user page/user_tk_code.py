@@ -1,7 +1,12 @@
 import tkinter as tk
 
 user_page = tk.Tk()
-user_page.geometry("1440x1024")
+
+#getting screen width and height of display
+#https://www.geeksforgeeks.org/how-to-create-full-screen-window-in-tkinter/#
+width= user_page.winfo_screenwidth() 
+height= user_page.winfo_screenheight()
+user_page.geometry("%dx%d" % (width, height))
 user_page.title("user page")
 
 
