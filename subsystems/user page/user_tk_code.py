@@ -1,5 +1,11 @@
 import tkinter as tk
 
+import sys
+
+sys.path.insert(1, "TODOLISTCS151/commands/back_button")
+
+from sys import back_button as back
+
 #creates the window
 user_page = tk.Tk()
 
@@ -20,14 +26,14 @@ user_page.grid_rowconfigure(0, pad=10)
 
 #labels the window 
 user_title = tk.Label(user_page, text="To-do List", font=("times new roman", 50, "bold"))
-user_title.grid(column=1, columnspan=3,row=1)
+user_title.grid(column=1, columnspan=8,row=1, sticky= "w")
 
 #creates the new list button and places it
 new_list_button = tk.Button(user_page, text="+", relief="sunken" ,font=("times new roman", 50, "bold"))
 new_list_button.grid(column=9, row=0, sticky="wens")
 
 #create back button
-user_back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("times new roman", 30))
+user_back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
 user_back_button.grid(column=0, row=0, sticky= "wens")
 
 # #creates arrow
