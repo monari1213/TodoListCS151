@@ -1,5 +1,11 @@
 import tkinter as tk
 
+import sys
+
+sys.path.insert(1, "TODOLISTCS151/commands")
+
+from commands import back_button as back
+
 complete_page = tk.Tk()
 complete_page.geometry("1440x1024")
 complete_page.title("complete page")
@@ -11,7 +17,7 @@ completed_sub_title = tk.Label(complete_page, text="{user}'s To-Do-List", font=(
 # need to place
 
 #create back button
-complete_back_button = tk.Button(complete_page, text="Back", relief="sunken" ,font=("times new roman", 30))
+complete_back_button = tk.Button(complete_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
 complete_back_button.grid(column=0, row=0, sticky= "wens")
 # also need an arrow
 
@@ -39,4 +45,5 @@ task_3_description = tk.Label(complete_page, text="{text_3_description}", font=(
 task_4_description = tk.Label(complete_page, text="{text_4_description}", font=("times new roman", 20)).grid(column=1, row=5, pady=10)
 # need to properly place
 
-complete_page.mainloop()
+#creates the page
+#complete_page.mainloop()

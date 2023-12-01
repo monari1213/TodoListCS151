@@ -1,4 +1,9 @@
 import tkinter as tk
+import sys
+
+sys.path.insert(1, "TODOLISTCS151/commands")
+
+from commands import back_button as back
 
 list_page = tk.Tk()
 list_page.geometry("1440x1024")
@@ -8,12 +13,10 @@ list_page.title("list page")
 user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).grid(column=1, row=0, columnspan=3, sticky= "wens")
 
 edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30)).grid(column=8, row=0, sticky= "wens")
-# need to place this somewhere
 add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30)).grid(column=9, row=0, sticky= "wens")
-# place to right of edit button
 
 #create back button
-list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30))
+list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
 list_back_button.grid(column=0, row=0, sticky= "wens")
 
 # place all the way to the left
@@ -36,7 +39,7 @@ list_back_button.grid(column=0, row=0, sticky= "wens")
 # task_1_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
 # task_2_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
 # task_3_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-# task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+# task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...
 
 # now for the task descriptions
 # make sure the y coordinate of these is the same as the corresponding textbox
@@ -52,4 +55,5 @@ task_3_description = tk.Label(list_page, text="{text_3_description}", font=("tim
 task_4_description = tk.Label(list_page, text="{text_4_description}", font=("times new roman", 20)).grid(column=1, row=4, pady=10)
 # need to properly place
 
-list_page.mainloop()
+#opens the page
+#list_page.mainloop()

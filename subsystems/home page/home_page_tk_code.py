@@ -37,4 +37,4 @@ home_user_label.grid(column=1, columnspan=2,row=2, padx= 10, pady = 25)
 placebo_user_label = tk.Label(home_page, text="Placebo User", relief="ridge", font=("times new roman", 25)).grid(column=1, row=3, padx=10)
 
 #opens the window
-home_page.mainloop()    
+#home_page.mainloop()    
