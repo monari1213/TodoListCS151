@@ -36,12 +36,6 @@ new_list_button.grid(column=9, row=0, sticky="wens")
 user_back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
 user_back_button.grid(column=0, row=0, sticky= "wens")
 
-# #creates arrow
-# user_arrow = tk.Canvas(user_page, width = 100, height = 100)
-# user_arrow.grid(column=0, row=0, sticky="wens")
-
-# user_arrow.create_line(100,75,25,75, arrow=tk.LAST)
-
 #the lists buttons and their corresponding tasks need to be adjusted for all the different possible files
 #creates the first list 
 list1_button = tk.Button(user_page, text="List 1 Name", relief="sunken", font=("times new roman", 30))

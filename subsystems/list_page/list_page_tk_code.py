@@ -22,15 +22,6 @@ list_back_button.grid(column=0, row=0, sticky= "wens")
 # place all the way to the left
 # also need an arrow
 
-#commented out arrow code cause its pissng me off - Kristina
-# arrow = tk.Canvas(user_list, width = 400, height = 400)
-# arrow.pack()
-# # draw an arrow from (50,50) to (200,200)
-# arrow.create_line(50,50,200,200, arrow=tk.LAST)
-# code creds for the arrow: https://www.codeease.net/programming/python/drawing-arrows-in-tkinter
-# NONE OF THESE NUMBER PLACEMENTS ARE RIGHT BECAUSE I CANT RUN MY CODE
-# THEY ARE PLACEHOLDERS
-
 # code it so that it is a bool, either complete or not
 # below the goal is just to make a circle
 # intentionally not putting in details
