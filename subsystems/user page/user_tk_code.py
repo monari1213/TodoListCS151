@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(1, "TODOLISTCS151/commands/back_button")
 
-from sys import back_button as back
+from commands import back_button as back
 
 #creates the window
 user_page = tk.Tk()
