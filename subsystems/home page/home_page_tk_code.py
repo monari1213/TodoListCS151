@@ -5,11 +5,13 @@ import sys
 sys.path.insert(1, "TODOLISTCS151/commands")
 
 from commands import home_popup as homepop
+from commands import read_lists as read
 
 #create the page
 home_page = tk.Tk()
 
 user_label_list = []
+user_checkbox_list = []
 
 #set size of the page and title it
 home_page.geometry("1440x1024")
@@ -25,12 +27,15 @@ new_user_button = tk.Button(home_page, text="+", relief="sunken" ,font=("times n
 home_user_label = tk.Label(home_page, text="Users", font=("times new roman", 30))
 
 #will for each user named and will display their name
-with open("placebo_user.txt", "r") as users:
-    user_names = users.readlines()
+user_names = read.read_user_lists("placebo_users")
     
 for i in range(len(user_names)):
     user_label_list.append(f"user_label{i}")
+    user_checkbox_list.append(f"user_button{i}")
     user_label_list[-1] = tk.Label(home_page, text=user_names[i], relief="ridge", font=("times new roman", 25))
+    #checkbox button
+    #user_checkbox_list[-1] = tk.Canvas.create_circle(x, y, r, options...) 
+    
 
 #opens the window
 #home_page.mainloop()    

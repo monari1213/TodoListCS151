@@ -11,17 +11,13 @@ list_page.geometry("1440x1024")
 list_page.title("list page")
 
 
-user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold")).grid(column=1, row=0, columnspan=3, sticky= "wens")
+user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold"))
 
-edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30), command= pop.open_pop_up).grid(column=8, row=0, sticky= "wens")
-add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30), command= pop.open_pop_up).grid(column=9, row=0, sticky= "wens")
+edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30), command= pop.open_pop_up)
+add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30), command= pop.open_pop_up)
 
 #create back button
 list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
-list_back_button.grid(column=0, row=0, sticky= "wens")
-
-# place all the way to the left
-# also need an arrow
 
 # code it so that it is a bool, either complete or not
 # below the goal is just to make a circle
