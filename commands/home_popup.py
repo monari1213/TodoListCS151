@@ -19,5 +19,6 @@ def open_user_pop_up ():
     new_user_entry = tk.Entry(use_pop_up)
     
     #creates add button
-    add_button = tk.Button(use_pop_up, text = "Add user" ,relief="sunken" ,font=("times new roman", 30))
+    new_user_add_button = tk.Button(use_pop_up, text = "Add user" ,relief="sunken" ,font=("times new roman", 30))
+    return new_user_entry
     
