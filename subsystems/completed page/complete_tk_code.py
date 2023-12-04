@@ -1,10 +1,6 @@
 import tkinter as tk
 
-import sys
-
-sys.path.insert(1, "TODOLISTCS151/commands")
-
-from commands import back_button as back
+import back_button as back
 
 complete_page = tk.Tk()
 complete_page.geometry("1440x1024")

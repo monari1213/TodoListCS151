@@ -1,11 +1,9 @@
 import tkinter as tk
 
-import sys
+import home_popup as homepop
+import read_lists as read
 
-sys.path.insert(1, "TODOLISTCS151/commands")
-
-from commands import home_popup as homepop
-from commands import read_lists as read
+import home_popup as homepop
 
 #create the page
 home_page = tk.Tk()
@@ -27,7 +25,7 @@ new_user_button = tk.Button(home_page, text="+", relief="sunken" ,font=("times n
 home_user_label = tk.Label(home_page, text="Users", font=("times new roman", 30))
 
 #will for each user named and will display their name
-user_names = read.read_user_lists("placebo_users")
+user_names = [] #read.read_user_lists("placebo_users")
     
 for i in range(len(user_names)):
     user_label_list.append(f"user_label{i}")

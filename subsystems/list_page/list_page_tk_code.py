@@ -1,10 +1,7 @@
 import tkinter as tk
-import sys
 
-sys.path.insert(1, "TODOLISTCS151/commands")
-
-from commands import back_button as back
-from commands import open_popup as pop
+import back_button as back
+import open_popup as pop
 
 list_page = tk.Tk()
 list_page.geometry("1440x1024")
@@ -44,4 +41,4 @@ task_4_description = tk.Label(list_page, text="{text_4_description}", font=("tim
 # need to properly place
 
 #opens the page
-#list_page.mainloop()
+list_page.mainloop()

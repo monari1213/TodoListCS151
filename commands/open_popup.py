@@ -1,10 +1,6 @@
 import tkinter as tk
 
-import sys
-
-sys.path.insert(1, "TODOLISTCS151/subsystems")
-
-from subsystems import list_page_tk_code as list
+import list_page_tk_code as list
 
 def open_pop_up (button):
     #creates the pop_up
