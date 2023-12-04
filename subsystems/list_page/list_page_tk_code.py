@@ -3,7 +3,8 @@ import sys
 
 sys.path.insert(1, "TODOLISTCS151/commands")
 
-# from commands import back_button as back
+from commands import back_button as back
+from commands import open_popup as pop
 
 list_page = tk.Tk()
 list_page.geometry("1440x1024")
@@ -12,12 +13,12 @@ list_page.title("list page")
 
 user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold"))
 
-edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30))
-add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30))
+edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30)).grid(column=8, row=0, sticky= "wens")
+add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30)).grid(column=9, row=0, sticky= "wens")
 
 #create back button
-# list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
-# list_back_button.grid(column=0, row=0, sticky= "wens")
+list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
+list_back_button.grid(column=0, row=0, sticky= "wens")
 
 # place all the way to the left
 # also need an arrow
