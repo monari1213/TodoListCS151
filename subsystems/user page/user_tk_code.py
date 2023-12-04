@@ -1,11 +1,7 @@
 import tkinter as tk
 
-import sys
-
-sys.path.insert(1, "TODOLISTCS151/commands")
-
-from commands import back_button as back
-from commands import read_lists as read
+import back_button as back
+import read_lists as read
 
 #creates the window
 user_page = tk.Tk()

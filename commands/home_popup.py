@@ -1,10 +1,6 @@
 import tkinter as tk
 
-import sys
-
-sys.path.insert(1, "TODOLISTCS151/subsystems")
-
-from subsystems import home_page_tk_code as home
+import home_page_tk_code as home
 
 def open_user_pop_up ():
     #creates the pop_up

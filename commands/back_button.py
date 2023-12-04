@@ -1,10 +1,6 @@
-import sys
-
-sys.path.insert(1, "TODOLISTCS151/subsystems")
-
-from subsystems import list_page_tk_code as list
-from subsystems import user_tk_code as user
-from subsystems import home_page_tk_code as home
+import list_page_tk_code as list
+import user_tk_code as user
+import home_page_tk_code as home
 
 def go_back(current_page):
     if current_page == "completed page" or current_page == "add pop-up" or current_page == "edit pop-up":

@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./commands",
+        "./subsystems/list_page",
+        "./subsystems/home page",
+        "./subsystems/user page"
+    ]
+}

@@ -1,10 +1,7 @@
 import tkinter as tk
-import sys
 
-sys.path.insert(1, "TODOLISTCS151/commands")
-
-from commands import back_button as back
-from commands import open_popup as pop
+import back_button as back
+import open_popup as pop
 
 list_page = tk.Tk()
 list_page.geometry("1440x1024")
