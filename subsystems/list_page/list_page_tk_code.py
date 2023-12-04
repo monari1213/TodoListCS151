@@ -1,21 +1,34 @@
 import tkinter as tk
 
-import back_button as back
-import open_popup as pop
+# import back_button as back
+#import open_popup as pop
 
 list_page = tk.Tk()
 list_page.geometry("1440x1024")
 list_page.title("list page")
 
 
-user_list = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold"))
+user_list = tk.Label(list_page, 
+                     text="List 1 Name", 
+                     font=("times new roman", 69, "bold"))
+user_list.pack(side="left",anchor="nw",padx=(100,0), pady=(75,0))
 
-edit_button = tk.Button(user_list, text="E", relief="sunken" ,font=("times new roman", 30)).grid(column=8, row=0, sticky= "wens")
-add_button = tk.Button(user_list, text="A", relief="sunken" ,font=("times new roman", 30)).grid(column=9, row=0, sticky= "wens")
+
+
+edit_button = tk.Button(user_list, 
+                        text="E", 
+                        relief="sunken" ,
+                        font=("times new roman", 30))
+#edit_button.pack(side="right", anchor = "ne", padx = 50, pady=100)
+
+add_button = tk.Button(user_list, 
+                       text="A", 
+                       relief="sunken" ,
+                       font=("times new roman", 30))
 
 #create back button
-list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30), command=back.go_back)
-list_back_button.grid(column=0, row=0, sticky= "wens")
+list_back_button = tk.Button(list_page, text="Back", relief="sunken" ,font=("times new roman", 30)) # command=back.go_back)
+#list_back_button.grid(column=0, row=0, sticky= "wens")
 
 # place all the way to the left
 # also need an arrow
@@ -29,24 +42,33 @@ list_back_button.grid(column=0, row=0, sticky= "wens")
 # NONE OF THESE NUMBER PLACEMENTS ARE RIGHT BECAUSE I CANT RUN MY CODE
 # THEY ARE PLACEHOLDERS
 
-# code it so that it is a bool, either complete or not
-# below the goal is just to make a circle
-# intentionally not putting in details
-# also need to make sure they are **buttons***
-#commented out to remove errors while I push - Kristina
-# task_1_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
+
 checkbox_var1 = tk.StringVar()
 checkbox1 = tk.Checkbutton(list_page,
                 text='<checkbox_label_1>',
                 #command=check_changed,
                 variable=checkbox_var1,
+                font=("times new roman", 30),
                 onvalue='<value_when_checked>',
                 offvalue='<value_when_unchecked>')
 # https://www.pythontutorial.net/tkinter/tkinter-checkbox/
-checkbox1.pack(side="left",anchor="nw",padx=(2,0))
-# task_2_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-# task_3_checkbox = tk.Canvas.create_circle(x, y, r, options...) 
-# task_4_checkbox = tk.Canvas.create_circle(x, y, r, options...
+checkbox1.pack(side="left",anchor="nw",padx=(100,0), pady=(100,0))
+
+#description1 = tk.Label(list_page, text="List 1 Name", font=("times new roman", 69, "bold"))
+
+
+checkbox_var2 = tk.StringVar()
+checkbox2 = tk.Checkbutton(list_page,
+                text='<checkbox_label_2>',
+                #command=check_changed,
+                variable=checkbox_var1,
+                font=("times new roman", 30),
+                onvalue='<value_when_checked>',
+                offvalue='<value_when_unchecked>')
+# https://www.pythontutorial.net/tkinter/tkinter-checkbox/
+checkbox2.pack(side="left",anchor="w",padx=(10,0), pady=(10,0))
+
+
 
 # now for the task descriptions
 # make sure the y coordinate of these is the same as the corresponding textbox
