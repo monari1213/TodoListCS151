@@ -24,7 +24,7 @@ user_back_button = tk.Button(user_page, text="Back", relief="sunken" ,font=("tim
 
 #the lists buttons and their corresponding tasks need to be adjusted for all the different possible files
 
-lists = read.read_user_lists(username)
+lists = read.read_user_lists()
     
 for i in range(len(lists)):
     list_num_list.append(f"{lists[i]}")
