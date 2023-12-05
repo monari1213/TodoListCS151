@@ -1,8 +1,11 @@
 {
-    "python.analysis.extraPaths": [
+    "python.autoComplete.extraPaths": [
         "./commands/",
         "./subsystems/list_page",
         "./subsystems/home page",
         "./subsystems/user page"
+    ],
+    "python.analysis.extraPaths": [
+        "./commands"
     ]
 }
