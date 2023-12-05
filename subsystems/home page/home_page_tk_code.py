@@ -1,6 +1,7 @@
 import tkinter as tk
-#import home_popup as homepop
-#import read_lists as read
+import home_popup as homepop
+#from home_popup import open_user_pop_up
+import read_lists as read
 
 #create the page
 home_page = tk.Tk()
@@ -17,13 +18,13 @@ home_page.title("home page")
 home_page_title = tk.Label(home_page, text="To-do List Application", font=("times new roman", 50, "bold"))
 
 #creates the new user button and places it
-new_user_button = tk.Button(home_page, text="+", relief="sunken" ,font=("times new roman", 50, "bold"))#, command=homepop.open_user_pop_up)
+new_user_button = tk.Button(home_page, text="+", relief="sunken" ,font=("times new roman", 50, "bold"), command= homepop.open_user_pop_up)
 
 #create subtitle label
 home_user_label = tk.Label(home_page, text="Users", font=("times new roman", 30))
 
 #will for each user named and will display their name
-user_names = ["Kristina", "Megan", "Cynthia", "Mr. John"]#read.read_user_lists("placebo_users")
+user_names = read.read_user_lists("placebo_users")
     
 for i in range(len(user_names)):
     user_label_list.append(f"user_label{i}")
