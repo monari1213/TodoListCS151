@@ -2,6 +2,7 @@ import tkinter as tk
 import home_popup as homepop
 #from home_popup import open_user_pop_up
 import read_lists as read
+from functools import partial
 
 #create the page
 home_page = tk.Tk()
