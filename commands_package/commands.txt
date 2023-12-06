@@ -1,3 +1,0 @@
-this folder will hold commands grouped by sub system
-ie there will be a folder of commands associate with the home bar
-roughlt one function to one file

@@ -9,6 +9,7 @@
         "./commands",
         "./subsystems/list_page",
         "./subsystems/home page",
-        "./subsystems/user page"
+        "./subsystems/user page",
+        "./commands_package"
     ]
 }

@@ -1,5 +1,5 @@
 import tkinter as tk
-#import home_popup as homepop
+import home_popup as homepop
 #from home_popup import open_user_pop_up
 #import read_lists as read
 from functools import partial
@@ -27,8 +27,8 @@ home_page_title = tk.Label(home_page, text="To-do List Application",
 home_page_title.pack(side="top", anchor = "w")
 #creates the new user button and places it
 new_user_button = tk.Button(home_page, text="+", relief="sunken" ,
-                            font=("times new roman", 100, "bold")) 
-                            #command= homepop.open_user_pop_up)
+                            font=("times new roman", 100, "bold"),
+                            command= homepop.open_user_pop_up)
 new_user_button.pack(side="top", anchor = "e", padx = (0,50)) 
 #create subtitle label
 home_user_label = tk.Label(home_page, text="Users", 
