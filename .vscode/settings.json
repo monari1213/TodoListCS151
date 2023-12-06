@@ -6,6 +6,9 @@
         "./subsystems/user page"
     ],
     "python.analysis.extraPaths": [
-        "./commands"
+        "./commands",
+        "./subsystems/list_page",
+        "./subsystems/home page",
+        "./subsystems/user page"
     ]
 }

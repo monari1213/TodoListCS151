@@ -1,7 +1,7 @@
 import tkinter as tk
 from functools import partial
-from commands.back_button import *
-from commands.read_lists import *
+from commands_package.back_button import go_back
+from commands_package.read_lists import read_user_lists
 
 #import back_button as back
 #import read_lists as read
